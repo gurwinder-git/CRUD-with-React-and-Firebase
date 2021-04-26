@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+*{
+    font-family: 'Open Sans', sans-serif;
+    /* border: 1px solid black; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headingDiv {
+    text-align: center;
+    text-transform: capitalize;
+    color: darkcyan;
+    padding: 48px 0px;
+    margin-top: 0px;
+    background-color: #efefef;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.contact {
+    margin: 28px 117px;
+    display: flex;
+}
+.formDiv {
+    width: 45%;
+    margin-right: 3rem;
+}
+
+.tableDiv {
+    width: 55%;
+    height: 100%;
+
+}
+
+input[type="text"] {
+    font-size: 1rem;
+    padding: .5rem .9rem;   
+    font-weight: 700;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid darkcyan;
+    margin: .5rem 0rem;
+    background-color: aliceblue;
+    
+}
+
+input[type="text"]:focus{
+    background-color: rgb(226, 233, 240);
+}
+
+textarea {
+    background: aliceblue;
+    height: 126px;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    border: 1px solid darkcyan;
+    border-radius: .4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: .5rem 0rem;
+}
+
+input[type="submit"] {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .4rem;
+    background: seagreen;
+    border: none;
+    border-radius: .3rem;
+    color: papayawhip;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(34, 100, 63);
+    color: #efefef;
+}
+
+input[type="submit"]:active{
+    background-color: rgb(16, 68, 39);
+    color: #efefef;
+}
+
+textarea:focus{
+    background-color: rgb(226, 233, 240);
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: seagreen;
+    color: white;
   }
-}
